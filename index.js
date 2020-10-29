@@ -5,7 +5,7 @@ const express = require('express')
 
 const server = express()
 
-const PORT = express.env.PORT || 4400
+const PORT = process.env.PORT || 4400
 
 server.use(express.static(path.join(__dirname, 'build')))
 
