@@ -7,7 +7,7 @@ const server = express()
 
 const PORT = process.env.PORT || 4400
 
-server.use(express.static(path.join(__dirname, 'build')))
+server.use(express.static(path.join(__dirname, 'build/static')))
 
 server.get('/api', (req, res) => {
   res.json({ message: 'foo' })
